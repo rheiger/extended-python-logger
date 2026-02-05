@@ -1,0 +1,5 @@
+version: 1
+name: extended-python-logger
+display_name: Extended Python Logger
+short_description: Guidance for using the extended-python-logger package.
+default_prompt: "Help with configuring and using extended-python-logger (TRACE/NOTICE, ring buffer, PITSCSV, env vars)."
