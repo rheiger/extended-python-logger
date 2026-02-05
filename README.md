@@ -125,6 +125,7 @@ See `examples/demo_app.py` for a full usage example including TRACE/NOTICE, ring
 ## Roadmap
 - Multi-language implementations for Rust, Go, C++, and JS/TS using native ecosystems
 - Optional cross-language logging spec
+ - Optional JSON formatter for structured logging
 
 ## License
 MIT
