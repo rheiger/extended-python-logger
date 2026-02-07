@@ -8,7 +8,7 @@ description: Use when working with the extended-python-logger package (TRACE/NOT
 ## When to use
 Use this skill for any task involving `extended-python-logger`: configuration, usage examples, troubleshooting logging output, or adding new features.
 
-For integration and replacement of an existing logging interface, use `/Users/rheiger/Dev/extended_python_logger/skills/extended-python-logger/references/migration.md`.
+For integration and replacement of an existing logging interface, use `skills/extended-python-logger/references/migration.md`.
 
 ## Quick usage
 ```python
@@ -45,4 +45,4 @@ Field order is fixed and includes a caller field (function:file:line) between fu
 ## Integration and migration
 - Use startup-time `configure_logging(...)` at application entrypoints.
 - Use `get_logger(__name__)` in modules and avoid direct root logger access.
-- For migration from legacy wrappers, follow `/Users/rheiger/Dev/extended_python_logger/skills/extended-python-logger/references/migration.md`.
+- For migration from legacy wrappers, follow `skills/extended-python-logger/references/migration.md`.

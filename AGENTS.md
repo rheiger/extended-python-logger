@@ -50,7 +50,7 @@ When `PITSCSV` format is selected, ensure the caller field is available (functio
 ## Integration and replacement
 - Configure logging once in the process entrypoint with `configure_logging(...)` or `PYTHON_LOG_*`.
 - Use `get_logger(__name__)` in modules instead of direct `logging.getLogger(...)`.
-- For phased replacement of legacy wrappers/interfaces, follow `/Users/rheiger/Dev/extended_python_logger/skills/extended-python-logger/references/migration.md`.
+- For phased replacement of legacy wrappers/interfaces, follow `skills/extended-python-logger/references/migration.md`.
 - Prefer adapter-first migration to reduce risk:
   - keep old API shape, route internals to `extended_python_logger`
   - migrate callsites incrementally
