@@ -7,6 +7,7 @@ import io
 import logging
 import os
 import sys
+import tempfile
 import threading
 from collections import deque
 from dataclasses import dataclass, field
@@ -469,7 +470,7 @@ def _ensure_ring(size: int) -> RingBuffer:
 
 def _default_ring_dump_path() -> str:
     stamp = _dt.datetime.utcnow().strftime("%Y%m%dT%H%M%S")
-    return f"/tmp/extended-python-logger-{stamp}.dump"
+    return os.path.join(tempfile.gettempdir(), f"extended-python-logger-{stamp}.dump")
 
 
 def dump_ring_buffer(path: Optional[str] = None) -> Optional[str]:
